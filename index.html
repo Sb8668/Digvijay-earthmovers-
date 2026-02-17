@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food & Beverage Audit Solutions Bilingual Brochure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Load specified fonts for professional aesthetic */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Open+Sans:wght@400;600;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700;800&display=swap');
+
+        /* Custom Colors & Fonts */
+        :root {
+            --primary-blue: #004488; /* Corporate Navy */
+            --accent-blue: #1A73E8;  /* Vibrant Accent */
+            --dark-black: #000000;   /* TRUE Black for emphasis */
+            --gray-text: #333333;    /* Very Dark Gray */
+            --light-bg: #F5F5F5;     /* Lighter Off-white */
+            --heading-font: 'Montserrat', sans-serif;
+            --body-font: 'Open Sans', sans-serif;
+            --marathi-font: 'Baloo Bhai 2', 'Noto Sans Devanagari', sans-serif;
+            --safe-margin-color: #2ECC71; /* Green for Profit/Margin */
+            --leakage-color: #E74C3C;   /* Red for Cost/Leakage */
+        }
+
+        /* A4 Simulation & Print Preparation: MAXIMIZED HEIGHT */
+        .a4-page {
+            width: 210mm;
+            height: 315mm; /* Maximized height to ensure all dense content fits */
+            margin: 10px auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            background-color: white;
+            color: var(--gray-text);
+            /* Reduced padding for maximum content area */
+            padding: 4mm; 
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            font-family: var(--body-font); 
+        }
+
+        /* Apply specified fonts */
+        .heading-font { font-family: var(--heading-font); }
+        .marathi-font { font-family: var(--marathi-font); }
+        .english-font { font-family: var(--body-font); }
+
+        /* HEADER: Solid Block with subtle geometric lines */
+        .header-bg {
+            background-color: var(--primary-blue);
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px 20px; 
+            margin-bottom: 8px; 
+        }
+        .header-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 5px, transparent 5px, transparent 15px);
+            opacity: 0.8;
+            z-index: 1;
+        }
+
+        /* Middle Section Background for Visual Zone */
+        .impact-zone {
+            background-color: var(--light-bg);
+            border-left: 4px solid var(--accent-blue); 
+            padding: 12px 15px 8px 15px; 
+        }
+        
+        /* Specific class for Marathi text below English text to maintain clean separation */
+        .marathi-subtext {
+            display: block;
+            margin-top: 1px;
+            font-size: 0.7rem; 
+            opacity: 0.9;
+            color: var(--dark-black); 
+            font-weight: 700; 
+        }
+        
+        /* General dark text style for body content */
+        .dark-text {
+            color: var(--dark-black);
+            font-weight: 600; 
+        }
+
+        /* Offer Section Styling */
+        .offer-box {
+            background-color: var(--accent-blue);
+            color: white;
+            text-align: center;
+            padding: 8px 15px; 
+            margin: 5px 0 8px 0; 
+            border-radius: 4px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Tighter list spacing */
+        .service-list {
+            line-height: 1.25;
+        }
+
+        /* Client Button Styling */
+        .client-button {
+            height: 35px; 
+            border: none;
+            color: white;
+            border-radius: 6px;
+            font-weight: 800;
+            font-size: 10px;
+            text-transform: uppercase;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+            line-height: 1.1; 
+            text-align: center;
+        }
+        
+        /* Contact Section Specific Tightening */
+        .contact-details {
+            font-size: 10px; /* Reduced font size for contact details */
+            line-height: 1.4;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 p-4">
+
+    <!-- A4 Page Container -->
+    <div class="a4-page">
+        
+        <!-- HEADER SECTION -->
+        <header class="header-bg rounded-md flex flex-col justify-center text-white relative z-0">
+            <!-- Top Row: Logo & Tagline -->
+            <div class="flex justify-between items-start mb-2 z-10">
+                <div class="text-3xl font-black heading-font tracking-tight uppercase">
+                    F&B<span class="font-normal text-xl"> AUDIT SOLUTIONS</span>
+                </div>
+                <div class="text-xs font-semibold uppercase tracking-widest text-right english-font">
+                    <span style="color: #c9e2ff;">PRECISION. TRANSPARENCY.</span> <br>PROFITABILITY.
+                </div>
+            </div>
+
+            <!-- Main Headline Block (Centered) -->
+            <div class="text-center z-10">
+                <h1 class="heading-font text-2xl font-extrabold tracking-tight mb-0.5"> 
+                    FOOD & BEVERAGE AUDIT SOLUTIONS PVT. LTD.
+                </h1>
+                <p class="text-sm font-light mb-0.5 opacity-90 english-font">
+                    Empowering Restaurants with Data-Driven Audit Systems.
+                </p>
+                <p class="marathi-font text-base font-medium opacity-90">
+                    डेटावर आधारित ऑडिट प्रणालीद्वारे रेस्टॉरंट नफ्यात आणणे.
+                </p>
+            </div>
+        </header>
+
+        <!-- MIDDLE SECTION (Main Content Area) -->
+        <main class="flex flex-grow mb-1">
+            <!-- Left Column: About Us & Services (Content Zone) -->
+            <div class="w-1/2 pr-5 pt-1">
+                <!-- Short Title: ABOUT -->
+                <h2 class="heading-font text-xl font-extrabold mb-1.5 border-b-2 pb-0.5" style="border-color:var(--accent-blue); color:var(--primary-blue);">
+                    <span class="english-font">ABOUT</span> <span class="text-sm font-semibold">|</span> <span class="marathi-font">आमच्याबद्दल</span>
+                </h2>
+                <p class="text-xs mb-1 leading-relaxed english-font dark-text"> 
+                    We specialize in rigorous food cost audits, stock management, and comprehensive performance evaluations for modern restaurants and cloud kitchens, driving operational excellence and protecting vital margins.
+                </p>
+                <p class="marathi-font text-[11px] italic mb-3 leading-relaxed marathi-subtext" style="color:var(--dark-black);"> 
+                    आम्ही रेस्टॉरंट आणि क्लाउड किचनसाठी अन्न खर्च ऑडिट, स्टॉक व्यवस्थापन आणि कार्यक्षमता मूल्यांकन यामध्ये तज्ज्ञ आहोत.
+                </p>
+
+                <!-- Short Title: SERVICES -->
+                <h2 class="heading-font text-xl font-extrabold mb-2 border-b-2 pb-0.5" style="border-color:var(--accent-blue); color:var(--primary-blue);">
+                    <span class="english-font">SERVICES</span> <span class="text-sm font-semibold">|</span> <span class="marathi-font">सेवा</span>
+                </h2>
+                <div class="space-y-1 service-list">
+                    <!-- Service 1 -->
+                    <div class="flex items-start gap-2 text-sm font-semibold english-font dark-text">
+                        <span class="flex-shrink-0 w-4 h-4 rounded-full text-white font-bold flex items-center justify-center text-[8px]" style="background-color:var(--accent-blue);">1</span> 
+                        <div>
+                            <span class="font-extrabold text-sm">Food Cost & Consumption Audit</span>
+                            <span class="marathi-subtext marathi-font">अन्न खर्च आणि उपभोग ऑडिट</span>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="flex items-start gap-2 text-sm font-semibold english-font dark-text">
+                        <span class="flex-shrink-0 w-4 h-4 rounded-full text-white font-bold flex items-center justify-center text-[8px]" style="background-color:var(--accent-blue);">2</span>
+                        <div>
+                            <span class="font-extrabold text-sm">Stock & Inventory Verification</span>
+                            <span class="marathi-subtext marathi-font">स्टॉक आणि इन्व्हेंटरी पडताळणी</span>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="flex items-start gap-2 text-sm font-semibold english-font dark-text">
+                        <span class="flex-shrink-0 w-4 h-4 rounded-full text-white font-bold flex items-center justify-center text-[8px]" style="background-color:var(--accent-blue);">3</span>
+                        <div>
+                            <span class="font-extrabold text-sm">Purchase & Vendor Monitoring</span>
+                            <span class="marathi-subtext marathi-font">खरेदी आणि विक्रेत्याचे निरीक्षण</span>
+                        </div>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="flex items-start gap-2 text-sm font-semibold english-font dark-text">
+                        <span class="flex-shrink-0 w-4 h-4 rounded-full text-white font-bold flex items-center justify-center text-[8px]" style="background-color:var(--accent-blue);">4</span>
+                        <div>
+                            <span class="font-extrabold text-sm">Staff Performance & SOP Audits</span>
+                            <span class="marathi-subtext marathi-font">कर्मचारी कामगिरी आणि SOP ऑडिट</span>
+                        </div>
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="flex items-start gap-2 text-sm font-semibold english-font dark-text">
+                        <span class="flex-shrink-0 w-4 h-4 rounded-full text-white font-bold flex items-center justify-center text-[8px]" style="background-color:var(--accent-blue);">5</span>
+                        <div>
+                            <span class="font-extrabold text-sm">Wastage & Pilferage Analysis</span>
+                            <span class="marathi-subtext marathi-font">अपव्यय आणि चोरीचे विश्लेषण</span>
+                        </div>
+                    </div>
+                    <!-- Service 6 -->
+                    <div class="flex items-start gap-2 text-sm font-semibold english-font dark-text">
+                        <span class="flex-shrink-0 w-4 h-4 rounded-full text-white font-bold flex items-center justify-center text-[8px]" style="background-color:var(--accent-blue);">6</span>
+                        <div>
+                            <span class="font-extrabold text-sm">Recipe Standardization & Costing</span>
+                            <span class="marathi-subtext marathi-font">रेसिपीचे मानकीकरण आणि खर्च निश्चिती</span>
+                        </div>
+                    </div>
+                    <!-- Service 7 -->
+                    <div class="flex items-start gap-2 text-sm font-semibold english-font dark-text">
+                        <span class="flex-shrink-0 w-4 h-4 rounded-full text-white font-bold flex items-center justify-center text-[8px]" style="background-color:var(--accent-blue);">7</span>
+                        <div>
+                            <span class="font-extrabold text-sm">Financial Reconciliation</span>
+                            <span class="marathi-subtext marathi-font">आर्थिक ताळमेळ (हिशोब जुळवणी)</span>
+                        </div>
+                    </div>
+                    <!-- Service 8 -->
+                    <div class="flex items-start gap-2 text-sm font-semibold english-font dark-text">
+                        <span class="flex-shrink-0 w-4 h-4 rounded-full text-white font-bold flex items-center justify-center text-[8px]" style="background-color:var(--accent-blue);">8</span>
+                        <div>
+                            <span class="font-extrabold text-sm">Weekly / Monthly Reporting Dashboard</span>
+                            <span class="marathi-subtext marathi-font">साप्ताहिक / मासिक अहवाल डॅशबोर्ड</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Visual / Impact Zone (Cost Control & Margin Improvement) -->
+            <div class="w-1/2 impact-zone flex flex-col justify-start space-y-2.5">
+                
+                <!-- Short Title: RESULTS - NOW CONSISTENT -->
+                <h2 class="heading-font text-xl font-extrabold mb-1.5 border-b-2 pb-0.5" style="border-color:var(--accent-blue); color:var(--primary-blue);">
+                    <span class="english-font">RESULTS</span> <span class="text-sm font-semibold">|</span> <span class="marathi-font">नफा वाढवा</span>
+                </h2>
+                
+                <!-- BILINGUAL PARAGRAPH -->
+                <div class="mb-1">
+                    <p class="text-sm font-medium english-font dark-text">
+                        The industry target food cost is <span class="font-extrabold">35%</span>. Without expert audit systems, many successful restaurants operate at dangerously high costs of <span class="font-extrabold">50% to 60%</span>. <span class="font-extrabold">We close this gap.</span>
+                    </p>
+                    <p class="marathi-font text-xs italic mt-0.5 marathi-subtext">
+                        उद्योग मानक अन्न खर्चाचे लक्ष्य <span class="font-extrabोलd">३५%</span> आहे. तज्ञांच्या ऑडिट प्रणालीशिवाय, अनेक यशस्वी रेस्टॉरंट्स धोकादायक अशा <span class="font-extrabold">५०% ते ६०%</span> खर्चावर चालतात. <span class="font-extrabold">आम्ही ही तफावत भरून काढतो.</span>
+                    </p>
+                </div>
+
+                <!-- Data Visualization: Professional Metric Comparison (TIGHTENED) -->
+                <div class="bg-white p-2.5 rounded-md shadow-lg border-t-4" style="border-color:var(--accent-blue);">
+                    <h4 class="font-bold text-center text-xs mb-1.5 uppercase english-font" style="color:var(--primary-blue);">
+                        Cost vs. Margin Comparison / खर्च विरुद्ध नफा तुलना
+                    </h4>
+                    <div class="flex justify-between gap-3">
+                        
+                        <!-- TARGET BOX -->
+                        <div class="flex-1 border-2 p-2 rounded-lg text-center shadow-md" style="border-color:var(--safe-margin-color);">
+                            <p class="heading-font text-[10px] font-black uppercase tracking-wider mb-0.5" style="color:var(--safe-margin-color);">
+                                TARGET (लक्ष्य)
+                            </p>
+                            <div class="my-0">
+                                <span class="heading-font text-2xl font-black block" style="color:var(--leakage-color);">35%</span>
+                                <span class="text-[10px] font-semibold english-font block dark-text">Ideal Cost</span>
+                            </div>
+                            <div class="pt-1 border-t border-dashed" style="border-color:#ccc;">
+                                <span class="text-lg font-extrabold english-font block" style="color:var(--safe-margin-color);">65%</span>
+                                <span class="text-[10px] font-semibold english-font block dark-text">Profit Margin</span>
+                            </div>
+                        </div>
+
+                        <!-- REALITY BOX -->
+                        <div class="flex-1 border-2 p-2 rounded-lg text-center shadow-md" style="border-color:var(--leakage-color);">
+                            <p class="heading-font text-[10px] font-black uppercase tracking-wider mb-0.5" style="color:var(--leakage-color);">
+                                REALITY (वास्तव)
+                            </p>
+                            <div class="my-0">
+                                <span class="heading-font text-2xl font-black block" style="color:var(--leakage-color);">60%</span>
+                                <span class="text-[10px] font-semibold english-font block dark-text">Actual Cost</span>
+                            </div>
+                            <div class="pt-1 border-t border-dashed" style="border-color:#ccc;">
+                                <span class="text-lg font-extrabold english-font block" style="color:var(--primary-blue);">40%</span>
+                                <span class="text-[10px] font-semibold english-font block dark-text">Profit Margin</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- High-Impact Callout Box -->
+                <div class="bg-white p-2.5 rounded-md shadow-xl border-t-4" style="border-color:var(--accent-blue);">
+                    <p class="text-sm font-semibold uppercase mb-0.5 english-font" style="color:var(--primary-blue);">
+                        KEY METRIC / मुख्य निकष
+                    </p>
+                    <p class="text-lg font-extrabold mb-0 english-font" style="color:var(--primary-blue);">
+                        Guaranteed Food Cost Reduction
+                    </p>
+                    <p class="text-4xl font-black heading-font" style="color:var(--accent-blue);">
+                        UP TO 15%
+                    </p>
+                    <p class="marathi-font text-xs italic mt-0.5 marathi-subtext">
+                        व्यवस्थित ऑडिटद्वारे आम्ही अन्न खर्चातील १५% पर्यंत गळती कमी करतो.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <!-- BOTTOM SECTION (Footer) -->
+        <footer class="pt-1 flex flex-col justify-end">
+            
+            <!-- OFFER SECTION (Compact) -->
+            <div class="offer-box">
+                <p class="heading-font text-base font-black uppercase mb-0.5">
+                    BOOK YOUR FREE CONSULTATION
+                </p>
+                <p class="english-font text-xs font-medium mb-0.5">
+                    1 Week Free Consultation for Your Business
+                </p>
+                <p class="marathi-font text-sm font-normal">
+                    तुमच्या व्यवसायासाठी १ आठवड्याची मोफत कन्सल्टेशन बुक करा!
+                </p>
+            </div>
+
+            <!-- PROFESSIONAL PROMISE SECTION (New & Improved) -->
+            <div class="px-2 py-2 rounded-lg border-2 border-dashed mb-2" style="border-color:var(--primary-blue); background-color: #F8F9FA;">
+                <h3 class="font-black text-center text-sm uppercase mb-1 english-font tracking-wider" style="color:var(--accent-blue);">
+                    PROFESSIONAL COMMITMENT | व्यावसायिक हमी
+                </h3>
+                <div class="flex items-center gap-3">
+                    <div class="text-3xl font-black flex-shrink-0" style="color:var(--primary-blue);">
+                        <span class="text-4xl">✓</span>
+                    </div>
+                    <div>
+                        <p class="text-xs font-extrabold english-font dark-text leading-tight" style="color:var(--dark-black);">
+                            ACTIONABLE INSIGHTS: We guarantee reports with clear, implementable actions that directly result in cost reduction and maximized profitability.
+                        </p>
+                        <p class="marathi-font text-[10px] italic mt-0.5 marathi
