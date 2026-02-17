@@ -3,195 +3,383 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Digvijay Earthmovers | Kolhapur</title>
-
+<title>Digvijay Earthmovers | अग्रगण्य अर्थमुव्हिंग सेवा</title>
 <script src="https://cdn.tailwindcss.com"></script>
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;600;700&family=Noto+Sans+Marathi:wght@400;700&display=swap" rel="stylesheet">
 <style>
-:root{
---yellow:#FACC15;
---black:#0f0f0f;
-}
+  :root {
+    --brand-yellow: #FACC15;
+    --brand-black: #0F0F0F;
+    --brand-dark: #1A1A1A;
+  }
 
-body{
-background:var(--black);
-color:#f3f4f6;
-font-family:sans-serif;
-}
+  body {
+    background-color: var(--brand-black);
+    color: #F3F4F6;
+    font-family: 'Noto Sans Marathi', 'Inter', sans-serif;
+    scroll-behavior: smooth;
+  }
 
-.btn{
-background:var(--yellow);
-color:#000;
-font-weight:bold;
-transition:.3s;
-}
+  .font-industrial { font-family: 'Bebas Neue', sans-serif; }
+  .font-tech { font-family: 'Rajdhani', sans-serif; }
 
-.btn:hover{
-background:white;
-}
+  .nav-main {
+    background: rgba(15, 15, 15, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 2px solid var(--brand-yellow);
+  }
 
-.section-title{
-border-left:6px solid var(--yellow);
-padding-left:15px;
-}
+  .btn-primary {
+    background: var(--brand-yellow);
+    color: #000;
+    font-weight: 800;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .btn-primary:hover {
+    background: #FFFFFF;
+    transform: translateY(-2px);
+  }
+
+  .card-machine {
+    background: var(--brand-dark);
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .card-machine:hover {
+    border-color: var(--brand-yellow);
+    transform: translateY(-5px);
+  }
+
+  .section-heading {
+    border-left: 8px solid var(--brand-yellow);
+    padding-left: 1.5rem;
+  }
+
+  .hero-stripe {
+    background: repeating-linear-gradient(45deg, var(--brand-yellow), var(--brand-yellow) 20px, #000 20px, #000 40px);
+    height: 10px;
+  }
+
+  input, textarea, select {
+    background: #262626 !important;
+    border: 1px solid #404040 !important;
+    color: white !important;
+  }
+
+  .industry-card-compact {
+    background: #151515;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .industry-card-compact:hover {
+    border-color: var(--brand-yellow);
+    background: #1a1a1a;
+  }
+
+  .industry-icon-mini {
+    width: 40px;
+    height: 40px;
+    background: rgba(250, 204, 21, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brand-yellow);
+    flex-shrink: 0;
+  }
+
+  .trust-badge-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    min-width: 160px;
+    color: black;
+  }
+
+  .badge-text {
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
 </style>
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="fixed top-0 w-full bg-black border-b border-yellow-400 z-50">
-<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-<h1 class="text-2xl font-bold text-yellow-400">DIGVIJAY EARTHMOVERS</h1>
-<a href="tel:+919923353638" class="btn px-4 py-2 rounded text-sm">Call Now</a>
-</div>
+<!-- NAVIGATION -->
+<nav class="fixed top-0 w-full z-[100] nav-main h-20">
+  <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <div class="bg-yellow-400 p-2 rounded text-black font-bold">DE</div>
+      <div>
+        <h1 class="font-industrial text-2xl tracking-tighter leading-none text-white">DIGVIJAY <span class="text-yellow-400">EARTHMOVERS</span></h1>
+        <div class="flex items-center gap-2 mt-1">
+          <span class="font-tech text-[8px] text-gray-400 tracking-[0.2em] uppercase font-bold">Trusted Infrastructure Partner</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden lg:flex items-center gap-8 font-tech text-xs font-bold uppercase tracking-widest text-white/70">
+      <a href="#home" class="hover:text-yellow-400">होम</a>
+      <a href="#expertise" class="hover:text-yellow-400">सेवा</a>
+      <a href="#fleet" class="hover:text-yellow-400">मशिनरी</a>
+      <a href="#clientele" class="hover:text-yellow-400">क्लायंट्स</a>
+      <a href="#contact" class="hover:text-yellow-400">चौकशी</a>
+    </div>
+    <a href="tel:+919834160492" class="btn-primary px-6 py-2 text-xs rounded hidden sm:block">कॉल करा</a>
+  </div>
 </nav>
 
-<!-- HERO -->
-<section class="pt-40 pb-24 px-6">
-<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+<!-- HERO SECTION - Optimized Space around Image -->
+<section id="home" class="pt-20 pb-10 px-6 bg-black">
+  <div class="max-w-7xl mx-auto flex flex-col items-center text-center">
+    
+    <!-- Hero Image - Reduced margins to remove black space -->
+    <div class="w-full max-w-4xl -mt-4 mb-4">
+      <img src="https://image2url.com/r2/default/images/1771338863536-c973968f-06db-4fe0-b94f-f6a7ed3c8c9e.png" 
+           alt="Digvijay Earthmovers" 
+           class="w-full h-auto object-contain">
+    </div>
 
-<!-- Left Content -->
-<div>
-<h2 class="text-5xl md:text-6xl font-bold text-yellow-400 mb-6">
-Powering Infrastructure
-</h2>
+    <div class="mb-4">
+      <h1 class="font-industrial text-4xl md:text-6xl text-white tracking-widest uppercase opacity-50 mb-1">DIGVIJAY</h1>
+      <h2 class="font-industrial text-7xl md:text-9xl text-yellow-400 leading-none uppercase tracking-tighter">EARTHMOVERS</h2>
+    </div>
 
-<p class="text-gray-400 mb-8">
-कोल्हापूरमधील अग्रगण्य अर्थमुव्हिंग सेवा प्रदाता. धरण बांधकाम, कालवा उत्खनन आणि औद्योगिक सपाटीकरणासाठी अत्याधुनिक मशिनरी उपलब्ध.
-</p>
-
-<a href="#contact" class="btn px-8 py-3 rounded">
-कोट मिळवा
-</a>
-</div>
-
-<!-- Right Image -->
-<div class="flex justify-center">
-<img src="https://image2url.com/r2/default/images/1771338863536-c973968f-06db-4fe0-b94f-f6a7ed3c8c9e.png"
-alt="Excavator Machine"
-class="w-full max-w-lg drop-shadow-2xl">
-</div>
-
-</div>
+    <h3 class="font-industrial text-5xl md:text-7xl leading-tight mb-8 uppercase text-white/90">
+      Powering Projects <br><span class="text-yellow-400">With Precision</span>
+    </h3>
+    
+    <p class="text-gray-400 text-lg mb-12 max-w-2xl mx-auto">
+      कोल्हापूरमधील अग्रगण्य अर्थमुव्हिंग सेवा प्रदाता. धरण बांधकाम, कालवा उत्खनन आणि औद्योगिक जमिनीचे सपाटीकरण यासाठी अत्याधुनिक मशिनरी आणि अनुभवी ऑपरेटरसह सज्ज.
+    </p>
+    
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="#contact" class="btn-primary px-10 py-4 text-sm font-tech tracking-widest">कोट मिळवा</a>
+      <a href="#expertise" class="border border-white/20 px-10 py-4 text-sm font-tech tracking-widest hover:bg-white/5 transition-colors">आमच्या सेवा</a>
+    </div>
+  </div>
 </section>
 
-<!-- SERVICES -->
-<section class="py-20 px-6 bg-zinc-900">
-<div class="max-w-7xl mx-auto">
-<h3 class="text-4xl font-bold text-white mb-12 section-title">Our Services</h3>
-<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-<div class="bg-black p-6 rounded">
-<h4 class="text-yellow-400 font-bold mb-2">Earthmoving</h4>
-<p class="text-gray-400 text-sm">Bulk earth shifting व leveling सेवा.</p>
-</div>
-<div class="bg-black p-6 rounded">
-<h4 class="text-yellow-400 font-bold mb-2">Excavation</h4>
-<p class="text-gray-400 text-sm">Road & foundation excavation कामे.</p>
-</div>
-<div class="bg-black p-6 rounded">
-<h4 class="text-yellow-400 font-bold mb-2">Mining Support</h4>
-<p class="text-gray-400 text-sm">Mining आणि quarry operations.</p>
-</div>
-<div class="bg-black p-6 rounded">
-<h4 class="text-yellow-400 font-bold mb-2">Equipment Rental</h4>
-<p class="text-gray-400 text-sm">Heavy machinery भाड्याने उपलब्ध.</p>
-</div>
-</div>
-</div>
+<div class="hero-stripe"></div>
+
+<!-- CORE SERVICES -->
+<section id="expertise" class="py-24 px-6 bg-zinc-950">
+  <div class="max-w-7xl mx-auto">
+    <div class="section-heading mb-16">
+      <h3 class="font-industrial text-5xl text-white mb-2 uppercase">Core <span class="text-yellow-400">Services</span></h3>
+      <p class="font-tech text-gray-500 tracking-widest uppercase text-xs font-bold">आमच्या मुख्य सेवा</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="p-8 bg-zinc-900 border-b-4 border-yellow-400">
+        <div class="text-yellow-400 text-4xl mb-6">01</div>
+        <h4 class="text-xl font-bold mb-4">Earthmoving</h4>
+        <p class="text-gray-400 text-sm">भूमी उत्खनन, लेबलिंग आणि बल्क अर्थ शिफ्टिंग सेवा.</p>
+      </div>
+      <div class="p-8 bg-zinc-900 border-b-4 border-yellow-400">
+        <div class="text-yellow-400 text-4xl mb-6">02</div>
+        <h4 class="text-xl font-bold mb-4">Excavation</h4>
+        <p class="text-gray-400 text-sm">रस्ते, इन्फ्रास्ट्रक्चर आणि बेसमेंटसाठी खोल उत्खनन कामे.</p>
+      </div>
+      <div class="p-8 bg-zinc-900 border-b-4 border-yellow-400">
+        <div class="text-yellow-400 text-4xl mb-6">03</div>
+        <h4 class="text-xl font-bold mb-4">Mining Support</h4>
+        <p class="text-gray-400 text-sm">क्वेरी उत्खनन आणि ओव्हरबर्डन रिमुव्हल ऑपरेशन्स.</p>
+      </div>
+      <div class="p-8 bg-zinc-900 border-b-4 border-yellow-400">
+        <div class="text-yellow-400 text-4xl mb-6">04</div>
+        <h4 class="text-xl font-bold mb-4">Equipment Rental</h4>
+        <p class="text-gray-400 text-sm">सर्व प्रकारच्या अवजड मशिनरी स्पर्धात्मक दरात भाड्याने उपलब्ध.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- MACHINERY -->
-<section class="py-20 px-6">
-<div class="max-w-7xl mx-auto">
-<h3 class="text-4xl font-bold mb-12 section-title">Heavy Machinery Fleet</h3>
+<!-- EQUIPMENT LIST - MAINTAINED EXACT DATA -->
+<section id="fleet" class="py-24 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="section-heading mb-16">
+      <h3 class="font-industrial text-5xl text-white mb-2 uppercase">Heavy-Duty <span class="text-yellow-400">Fleet</span></h3>
+      <p class="font-tech text-gray-500 tracking-widest uppercase text-xs font-bold">आमची अत्याधुनिक १० यंत्रे</p>
+    </div>
 
-<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-<div class="bg-zinc-900 p-6 rounded">
-<h4 class="text-yellow-400 font-bold">JCB 3DX</h4>
-<p class="text-gray-400 text-sm">Backhoe Loader</p>
-</div>
-
-<div class="bg-zinc-900 p-6 rounded">
-<h4 class="text-yellow-400 font-bold">Tata Hitachi EX200</h4>
-<p class="text-gray-400 text-sm">Hydraulic Excavator</p>
-</div>
-
-<div class="bg-zinc-900 p-6 rounded">
-<h4 class="text-yellow-400 font-bold">Komatsu PC210</h4>
-<p class="text-gray-400 text-sm">Heavy Excavator</p>
-</div>
-
-<div class="bg-zinc-900 p-6 rounded">
-<h4 class="text-yellow-400 font-bold">CAT D6</h4>
-<p class="text-gray-400 text-sm">Bulldozer</p>
-</div>
-
-<div class="bg-zinc-900 p-6 rounded">
-<h4 class="text-yellow-400 font-bold">Sany SY215C</h4>
-<p class="text-gray-400 text-sm">Excavator</p>
-</div>
-
-<div class="bg-zinc-900 p-6 rounded">
-<h4 class="text-yellow-400 font-bold">Leyland 2518</h4>
-<p class="text-gray-400 text-sm">Tipper Truck</p>
-</div>
-
-</div>
-</div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div class="card-machine p-6 rounded-lg">
+        <h4 class="font-industrial text-2xl text-white mb-1">JCB 3DX Backhoe</h4>
+        <p class="text-yellow-400 font-tech font-bold uppercase text-[10px] mb-4">Standard Loader</p>
+        <p class="text-xs text-gray-400 mb-6 italic">बांधकामासाठी उत्खनन आणि साईट क्लिअरन्ससाठी उपयुक्त.</p>
+        <a href="https://wa.me/919834160492" class="mt-auto block text-center border border-yellow-400/30 py-2 text-[10px] font-bold hover:bg-yellow-400 hover:text-black transition-all uppercase">त्वरीत चौकशी</a>
+      </div>
+      <div class="card-machine p-6 rounded-lg">
+        <h4 class="font-industrial text-2xl text-white mb-1">Tata Hitachi EX 200</h4>
+        <p class="text-yellow-400 font-tech font-bold uppercase text-[10px] mb-4">Heavy Excavator</p>
+        <p class="text-xs text-gray-400 mb-6 italic">मोठ्या प्रमाणावरील उत्खनन आणि पायाभरणी कामांसाठी.</p>
+        <a href="https://wa.me/919834160492" class="mt-auto block text-center border border-yellow-400/30 py-2 text-[10px] font-bold hover:bg-yellow-400 hover:text-black transition-all uppercase">त्वरीत चौकशी</a>
+      </div>
+      <div class="card-machine p-6 rounded-lg">
+        <h4 class="font-industrial text-2xl text-white mb-1">Komatsu PC210</h4>
+        <p class="text-yellow-400 font-tech font-bold uppercase text-[10px] mb-4">Hydraulic Excavator</p>
+        <p class="text-xs text-gray-400 mb-6 italic">धरण बांधकाम आणि कालवा उत्खननासाठी हाय-परफॉर्मन्स मशिन.</p>
+        <a href="https://wa.me/919834160492" class="mt-auto block text-center border border-yellow-400/30 py-2 text-[10px] font-bold hover:bg-yellow-400 hover:text-black transition-all uppercase">त्वरीत चौकशी</a>
+      </div>
+      <div class="card-machine p-6 rounded-lg">
+        <h4 class="font-industrial text-2xl text-white mb-1">CAT D6 Bulldozer</h4>
+        <p class="text-yellow-400 font-tech font-bold uppercase text-[10px] mb-4">Track-Type Tractor</p>
+        <p class="text-xs text-gray-400 mb-6 italic">जमीन सपाटीकरण आणि हेवी ग्रेडिंगसाठी पॉवरहाऊस.</p>
+        <a href="https://wa.me/919834160492" class="mt-auto block text-center border border-yellow-400/30 py-2 text-[10px] font-bold hover:bg-yellow-400 hover:text-black transition-all uppercase">त्वरीत चौकशी</a>
+      </div>
+      <div class="card-machine p-6 rounded-lg">
+        <h4 class="font-industrial text-2xl text-white mb-1">JCB JS205</h4>
+        <p class="text-yellow-400 font-tech font-bold uppercase text-[10px] mb-4">Tracked Excavator</p>
+        <p class="text-xs text-gray-400 mb-6 italic">कठिण औद्योगिक भूप्रदेशासाठी अनुकूल यंत्र.</p>
+        <a href="https://wa.me/919834160492" class="mt-auto block text-center border border-yellow-400/30 py-2 text-[10px] font-bold hover:bg-yellow-400 hover:text-black transition-all uppercase">त्वरीत चौकशी</a>
+      </div>
+      <div class="card-machine p-6 rounded-lg">
+        <h4 class="font-industrial text-2xl text-white mb-1">Case 1107EX</h4>
+        <p class="text-yellow-400 font-tech font-bold uppercase text-[10px] mb-4">Vibratory Compactor</p>
+        <p class="text-xs text-gray-400 mb-6 italic">माती आणि सब-बेस कॉम्पॅक्शनसाठी अचूक यंत्र.</p>
+        <a href="https://wa.me/919834160492" class="mt-auto block text-center border border-yellow-400/30 py-2 text-[10px] font-bold hover:bg-yellow-400 hover:text-black transition-all uppercase">त्वरीत चौकशी</a>
+      </div>
+      <div class="card-machine p-6 rounded-lg">
+        <h4 class="font-industrial text-2xl text-white mb-1">Cat 140K Grader</h4>
+        <p class="text-yellow-400 font-tech font-bold uppercase text-[10px] mb-4">Motor Grader</p>
+        <p class="text-xs text-gray-400 mb-6 italic">रस्त्याच्या कामात फिनिशिंग आणि लेव्हलिंगसाठी आवश्यक.</p>
+        <a href="https://wa.me/919834160492" class="mt-auto block text-center border border-yellow-400/30 py-2 text-[10px] font-bold hover:bg-yellow-400 hover:text-black transition-all uppercase">त्वरीत चौकशी</a>
+      </div>
+      <div class="card-machine p-6 rounded-lg">
+        <h4 class="font-industrial text-2xl text-white mb-1">Sany SY215C</h4>
+        <p class="text-yellow-400 font-tech font-bold uppercase text-[10px] mb-4">Heavy Excavator</p>
+        <p class="text-xs text-gray-400 mb-6 italic">सतत चालणाऱ्या अर्थमुव्हिंग कामात उच्च कार्यक्षमता.</p>
+        <a href="https://wa.me/919834160492" class="mt-auto block text-center border border-yellow-400/30 py-2 text-[10px] font-bold hover:bg-yellow-400 hover:text-black transition-all uppercase">त्वरीत चौकशी</a>
+      </div>
+      <div class="card-machine p-6 rounded-lg">
+        <h4 class="font-industrial text-2xl text-white mb-1">Ammann Paver</h4>
+        <p class="text-yellow-400 font-tech font-bold uppercase text-[10px] mb-4">Asphalt Paver</p>
+        <p class="text-xs text-gray-400 mb-6 italic">रस्त्यांच्या डांबरीकरणासाठी अत्याधुनिक मशीन.</p>
+        <a href="https://wa.me/919834160492" class="mt-auto block text-center border border-yellow-400/30 py-2 text-[10px] font-bold hover:bg-yellow-400 hover:text-black transition-all uppercase">त्वरीत चौकशी</a>
+      </div>
+      <div class="card-machine p-6 rounded-lg">
+        <h4 class="font-industrial text-2xl text-white mb-1">Leyland 2518</h4>
+        <p class="text-yellow-400 font-tech font-bold uppercase text-[10px] mb-4">Multi-Axle Tipper</p>
+        <p class="text-xs text-gray-400 mb-6 italic">मोठ्या प्रमाणात माल वाहतूक आणि साईट लॉजिस्टिकसाठी.</p>
+        <a href="https://wa.me/919834160492" class="mt-auto block text-center border border-yellow-400/30 py-2 text-[10px] font-bold hover:bg-yellow-400 hover:text-black transition-all uppercase">त्वरीत चौकशी</a>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- OWNER -->
-<section class="py-16 px-6 bg-zinc-900 text-center">
-<h3 class="text-3xl font-bold text-yellow-400 mb-4">Proprietor</h3>
-<h2 class="text-4xl font-bold text-white">Digvijay Vasantrao Patil</h2>
-<p class="text-gray-400 mt-2">GSTIN: 27BIHPP0094H1Z3</p>
-<p class="text-gray-400">Kolhapur, Maharashtra</p>
-<p class="text-yellow-400 font-bold mt-2">+91 99233 53638</p>
+<!-- CLIENTELE -->
+<section id="clientele" class="py-24 px-6 bg-zinc-950">
+  <div class="max-w-7xl mx-auto">
+    <div class="section-heading mb-12">
+      <h3 class="font-industrial text-5xl text-white mb-2 uppercase">Clientele & <span class="text-yellow-400">Industries</span></h3>
+      <p class="font-tech text-gray-500 tracking-widest uppercase text-xs font-bold">आम्ही या क्षेत्रांना सेवा देतो</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="industry-card-compact rounded-lg">
+        <div class="industry-icon-mini">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+        </div>
+        <span class="text-white font-tech font-bold tracking-wider uppercase text-sm">Government Contracts</span>
+      </div>
+      <div class="industry-card-compact rounded-lg">
+        <div class="industry-icon-mini">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+        </div>
+        <span class="text-white font-tech font-bold tracking-wider uppercase text-sm">Private Construction</span>
+      </div>
+      <div class="industry-card-compact rounded-lg">
+        <div class="industry-icon-mini">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        </div>
+        <span class="text-white font-tech font-bold tracking-wider uppercase text-sm">Infrastructure Developers</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION VISION -->
+<section class="py-24 px-6 bg-yellow-400 text-black">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+    <div>
+      <h3 class="font-industrial text-6xl mb-6 uppercase">Our Mission</h3>
+      <p class="text-xl font-medium leading-relaxed">
+        Digvijay Earthmovers चे उद्दिष्ट आहे सर्वोत्तम, सुरक्षित आणि वेळेवर Earthmoving Services देणे, जे आमच्या क्लायंटच्या प्रकल्पांना यशस्वी करण्यासाठी मदत करतात.
+      </p>
+    </div>
+    <div class="border-l-4 border-black pl-8">
+      <h3 class="font-industrial text-6xl mb-6 uppercase">Our Vision</h3>
+      <p class="text-xl font-medium leading-relaxed">
+        पश्चिम भारतात सर्वात विश्वासार्ह, प्रगतीशील आणि पर्यावरणपूरक अर्थमुव्हिंग कंपनी म्हणून नाव लौकिक मिळवणे.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- OWNER INFO -->
+<section class="py-20 px-6 border-t border-white/5 bg-zinc-900">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+    <div class="text-left">
+      <h3 class="font-tech text-yellow-400 font-bold uppercase tracking-widest text-xs mb-2">Business Proprietor</h3>
+      <h2 class="font-industrial text-5xl text-white">DIGVIJAY VASANTRAO PATIL</h2>
+      <p class="text-gray-500 text-sm mt-2">GSTIN: 27BIHPP0094H1Z3 | Kolhapur</p>
+    </div>
+    <div class="text-right">
+       <div class="text-white font-bold text-xl">+91 99233 53638</div>
+       <div class="text-yellow-400 mt-1 font-bold text-xl">+91 98341 60492</div>
+    </div>
+  </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="py-20 px-6 bg-black text-center">
-<h3 class="text-4xl font-bold text-yellow-400 mb-8">Direct Enquiry</h3>
-
-<form class="max-w-3xl mx-auto grid gap-6"
-onsubmit="event.preventDefault(); window.open('https://wa.me/919923353638?text=I am interested in your services');">
-
-<input type="text" placeholder="Full Name" class="p-4 bg-zinc-900 border border-white/10 rounded" required>
-<input type="tel" placeholder="Mobile Number" class="p-4 bg-zinc-900 border border-white/10 rounded" required>
-<textarea rows="4" placeholder="Project Details" class="p-4 bg-zinc-900 border border-white/10 rounded"></textarea>
-
-<button type="submit" class="btn py-3 rounded">Send Enquiry</button>
-
-</form>
+<section id="contact" class="py-24 px-6 bg-black">
+  <div class="max-w-4xl mx-auto text-center">
+    <h3 class="font-industrial text-6xl text-white mb-8 uppercase">Direct <span class="text-yellow-400">Enquiry</span></h3>
+    <form class="grid md:grid-cols-2 gap-6 text-left" onsubmit="event.preventDefault(); window.open('https://wa.me/919834160492?text=I%20am%20interested%20in%20your%20services');">
+      <input type="text" placeholder="पूर्ण नाव / कंपनी" class="p-4 rounded border border-white/10" required>
+      <input type="tel" placeholder="मोबाईल नंबर" class="p-4 rounded border border-white/10" required>
+      <select class="md:col-span-2 p-4 rounded border border-white/10">
+        <option>धरण/कालव्याच्या कामासाठी मशिनरी</option>
+        <option>औद्योगिक सपाटीकरणासाठी मशिनरी</option>
+        <option>खाणकाम सपोर्ट (Mining Support)</option>
+        <option>मशिनरी भाड्याने हवी आहे (Rental)</option>
+      </select>
+      <textarea rows="4" placeholder="प्रकल्पाची थोडक्यात माहिती..." class="md:col-span-2 p-4 rounded border border-white/10"></textarea>
+      <button type="submit" class="btn-primary md:col-span-2 py-4 text-xl font-tech tracking-widest uppercase">कोट मिळवा</button>
+    </form>
+  </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="bg-zinc-950 border-t border-white/10 py-12">
-<div class="max-w-7xl mx-auto px-6">
-
-<div class="flex flex-col md:flex-row flex-wrap justify-center items-center gap-6 mb-8">
-
-<div class="bg-white text-black px-6 py-3 rounded shadow">
-Google Verified Business
-</div>
-
-<div class="bg-white text-black px-6 py-3 rounded shadow">
-Justdial Premium Listing
-</div>
-
-<div class="bg-white text-black px-6 py-3 rounded shadow">
-IndiaMART TrustSEAL Supplier
-</div>
-
-</div>
-
-<div class="text-center text-gray-500 text-xs uppercase">
-© 2026 Digvijay Earthmovers | All Rights Reserved
-</div>
-
-</div>
-</footer>
-
-</body>
-</html>
+<!-- FOOTER WITH TRUST BADGES -->
+<footer class="py-16 bg-zinc-950 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-wrap justify-center gap-4 mb-12">
+      <div class="trust-badge-card">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        <div class="badge-text">Google Business<br><span class="text-green-600">Verified</span></div>
+      </div>
+      <div class="trust-badge-card">
+        <div class="w-6 h-6 bg-blue-600 rounded flex items-center justify-center text-white font-black text-[10px]">JD</div>
+        <div class="badge-text">Justdial<br><span class="text-blue-600">Verified</span></div>
+      </div>
+      <div class="trust-badge-card">
+        <div class="w-6 h-6 bg-teal-600 rounded-full flex items-center justify-center">
+          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3
